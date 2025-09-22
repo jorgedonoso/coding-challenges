@@ -1,12 +1,12 @@
 {
-  "name": "daily-coding-problem",
+  "name": "coding-challenges",
   "version": "1.0.0",
-  "description": "",
+  "description": "My collection of (almost daily) coding challenges, algorithmic problems, and data structure exercises.",
   "main": "index.js",
   "scripts": {
     "test": "vitest --reporter=verbose"
   },
-  "author": "",
+  "author": "Jorge Donoso",
   "license": "ISC",
   "devDependencies": {
     "vitest": "^3.2.4"
