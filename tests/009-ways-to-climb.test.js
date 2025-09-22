@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { StartWaysToClimb } from "./2025-09-12";
+import { StartWaysToClimb } from "../solutions/009-ways-to-climb";
 
 test("0 steps returns 1 way (already at the top)", () => {
   const res = StartWaysToClimb(0);

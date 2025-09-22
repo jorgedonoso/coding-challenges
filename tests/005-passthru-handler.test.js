@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { Cons, Car, Cdr } from "./2025-09-05";
+import { Cons, Car, Cdr } from "../solutions/005-passthru-handler";
 
 test("Car(): provided dataset #1", () => {
   expect(Car(Cons(3, 4))).toBe(3);

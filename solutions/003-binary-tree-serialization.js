@@ -8,11 +8,13 @@
  * assert deserialize(serialize(node)).left.left.val == 'left.left'
  */
 
+const EMPTY = "(empty)";
+
 export function Serialize(node) {
   const res = [];
 
   // Use "(empty)" for absent values.
-  if (!node?.val) return "(empty)";
+  if (!node?.val) return EMPTY;
 
   res.push(node.val);
   res.push(Serialize(node.left));
@@ -34,7 +36,7 @@ function EvalNode(values, index) {
   const val = values[index];
 
   // Handle "empty" value.
-  if (val === "(empty)") return [undefined, index + 1];
+  if (val === EMPTY) return [undefined, index + 1];
 
   const node = Node(val);
 

@@ -1,5 +1,8 @@
 import { test, expect, describe } from "vitest";
-import { Autocomplete, BuildLookupTree } from "./2025-09-11";
+import {
+  Autocomplete,
+  BuildLookupTree,
+} from "../solutions/010-autocomplete-system";
 
 describe("using provided dictionary", () => {
   const _dict = ["dog", "deer", "deal"];

@@ -1,5 +1,5 @@
 import { test, expect, describe } from "vitest";
-import { EfficientLog } from "./2025-09-16";
+import { EfficientLog } from "../solutions/012-efficient-log";
 
 describe("Silent failure tests", () => {
   test("Add zero orders to N=1 log and get latest", () => {

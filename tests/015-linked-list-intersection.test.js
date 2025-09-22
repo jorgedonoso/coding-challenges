@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { FindIntersection } from "./2025-09-22";
+import { FindIntersection } from "../solutions/015-linked-list-intersection";
 
 test("Match in middle", () => {
   const listA = [3, 7, 8, 10];

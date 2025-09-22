@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { FindLongestPathLength } from "./2025-09-17";
+import { FindLongestPathLength } from "../solutions/013-longest-path-length";
 
 test("Provided case #1", () => {
   const res = FindLongestPathLength("dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext");

@@ -1,5 +1,8 @@
 import { test, expect } from "vitest";
-import { StartCountingWrapper, Node } from "./2025-09-08";
+import {
+  StartCountingWrapper,
+  Node,
+} from "../solutions/006-unival-tree-count.js";
 
 test("Dataset #1", () => {
   const tree = Node(0);

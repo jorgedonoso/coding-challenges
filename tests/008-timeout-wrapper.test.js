@@ -1,5 +1,5 @@
 import { test, expect, vi } from "vitest";
-import { ScheduleJob } from "./2025-09-10";
+import { ScheduleJob } from "../solutions/008-timeout-wrapper";
 
 test("job is called after delay", async () => {
   const mockJob = vi.fn();

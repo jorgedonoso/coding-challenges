@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { FindMaxSubArray } from "./2025-09-18";
+import { FindMaxSubArray } from "../solutions/014-max-sub-array";
 
 test("Provided case", () => {
   const res = FindMaxSubArray([10, 5, 2, 7, 8, 7], 3);

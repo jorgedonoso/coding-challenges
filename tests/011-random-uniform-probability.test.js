@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { GetRandomWithUniformProbability } from "./2025-09-15";
+import { GetRandomWithUniformProbability } from "../solutions/011-random-uniform-probability";
 
 test("One element stream", () => {
   const res = GetRandomWithUniformProbability(["a"]);

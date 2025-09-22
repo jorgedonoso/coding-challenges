@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { FindMaxSum } from "./2025-09-09";
+import { FindMaxSum } from "../solutions/007-non-adjacent-max-sum";
 
 test("Provided Dataset #1", () => {
   expect(FindMaxSum([2, 4, 6, 2, 5])).toBe(13);

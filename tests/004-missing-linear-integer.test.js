@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { Go } from "./2025-09-04";
+import { Go } from "../solutions/004-missing-linear-integer";
 
 test("provided dataset #1", () => {
   expect(Go([3, 4, -1, 1])).toBe(2);

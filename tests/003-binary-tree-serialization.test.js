@@ -1,5 +1,9 @@
 import { test, expect } from "vitest";
-import { Node, Serialize, Deserialize } from "./2025-09-03.js";
+import {
+  Node,
+  Serialize,
+  Deserialize,
+} from "../solutions/003-binary-tree-serialization";
 
 test("Base node test", () => {
   const tree = Node("root", Node("left", Node("left.left")), Node("right"));
