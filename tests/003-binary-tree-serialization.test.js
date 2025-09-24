@@ -13,9 +13,7 @@ test("Base node test", () => {
 test("Serialize #1", () => {
   const tree = Node("root", Node("left-val"), Node("right-val"));
 
-  expect(Serialize(tree)).toBe(
-    "root,left-val,(empty),(empty),right-val,(empty),(empty)"
-  );
+  expect(Serialize(tree)).toBe("root,left-val,,,right-val,,");
 });
 
 test("Serialize #2", () => {
@@ -25,18 +23,18 @@ test("Serialize #2", () => {
     Node("right-1-root", Node("right-1-left"), Node("right-1-right"))
   );
   expect(Serialize(tree)).toBe(
-    "root,left-1,(empty),(empty),right-1-root,right-1-left,(empty),(empty),right-1-right,(empty),(empty)"
+    "root,left-1,,,right-1-root,right-1-left,,,right-1-right,,"
   );
 });
 
 test("Serialize #3", () => {
   const tree = Node(
     "root",
-    Node("left-1-root", Node("left-1-left"), "(empty)"),
-    Node("right-1-root", "(empty)", Node("right-1-right"))
+    Node("left-1-root", Node("left-1-left"), ""),
+    Node("right-1-root", "", Node("right-1-right"))
   );
   expect(Serialize(tree)).toBe(
-    "root,left-1-root,left-1-left,(empty),(empty),(empty),right-1-root,(empty),right-1-right,(empty),(empty)"
+    "root,left-1-root,left-1-left,,,,right-1-root,,right-1-right,,"
   );
 });
 
